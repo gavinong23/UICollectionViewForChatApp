@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="MessageCollectionViewCell" customModule="TestUIConstraint" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="413" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lwd-5c-rZq">
+                        <rect key="frame" x="0.0" y="0.0" width="413" height="50"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y2C-IK-pY6">
+                                <rect key="frame" x="3" y="3" width="407" height="44"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a2k-Le-kV9">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="44"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h01-Ms-nYY">
+                                                <rect key="frame" x="0.0" y="9" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="UKY-fh-0bx"/>
+                                                    <constraint firstAttribute="height" constant="30" id="sqk-LZ-6hX"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="h01-Ms-nYY" firstAttribute="leading" secondItem="a2k-Le-kV9" secondAttribute="leading" id="ReU-fr-6Sp"/>
+                                            <constraint firstAttribute="bottom" secondItem="h01-Ms-nYY" secondAttribute="bottom" constant="5" id="vai-qI-raX"/>
+                                            <constraint firstAttribute="trailing" secondItem="h01-Ms-nYY" secondAttribute="trailing" id="ySh-oO-qTv"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tcz-sz-FyD">
+                                        <rect key="frame" x="30" y="0.0" width="377" height="44"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="REJ-MH-pcp">
+                                                <rect key="frame" x="0.0" y="0.0" width="377" height="44"/>
+                                                <color key="backgroundColor" red="1" green="0.66977668739999996" blue="0.63962362709999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="REJ-MH-pcp" secondAttribute="trailing" id="3Xh-2i-dnM"/>
+                                            <constraint firstAttribute="bottom" secondItem="REJ-MH-pcp" secondAttribute="bottom" id="DcH-r3-ZGt"/>
+                                            <constraint firstItem="REJ-MH-pcp" firstAttribute="top" secondItem="tcz-sz-FyD" secondAttribute="top" id="GsQ-jG-OLX"/>
+                                            <constraint firstItem="REJ-MH-pcp" firstAttribute="leading" secondItem="tcz-sz-FyD" secondAttribute="leading" id="SVf-qC-DUh"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13815706450000001" green="1" blue="0.94678491730000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Y2C-IK-pY6" firstAttribute="leading" secondItem="lwd-5c-rZq" secondAttribute="leading" constant="3" id="4mf-z9-urv"/>
+                            <constraint firstAttribute="trailing" secondItem="Y2C-IK-pY6" secondAttribute="trailing" constant="3" id="s2I-9J-peB"/>
+                            <constraint firstItem="Y2C-IK-pY6" firstAttribute="top" secondItem="lwd-5c-rZq" secondAttribute="top" constant="3" id="v7A-gI-7Ub"/>
+                            <constraint firstAttribute="bottom" secondItem="Y2C-IK-pY6" secondAttribute="bottom" constant="3" id="yld-Cl-T9n"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="lwd-5c-rZq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="K4u-aY-Tcu"/>
+                <constraint firstItem="lwd-5c-rZq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="eTg-ZA-pA7"/>
+                <constraint firstAttribute="bottom" secondItem="lwd-5c-rZq" secondAttribute="bottom" id="sfh-9w-ogJ"/>
+                <constraint firstAttribute="trailing" secondItem="lwd-5c-rZq" secondAttribute="trailing" id="z1c-6D-4Md"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="514" height="48"/>
+            <connections>
+                <outlet property="cellLeading" destination="eTg-ZA-pA7" id="nhU-oI-Xcn"/>
+                <outlet property="cellTrailing" destination="z1c-6D-4Md" id="mwa-QR-0ho"/>
+                <outlet property="chatLogMessageTextView" destination="REJ-MH-pcp" id="JVT-Lo-c8E"/>
+                <outlet property="profileImageView" destination="h01-Ms-nYY" id="vlt-O1-lOW"/>
+            </connections>
+            <point key="canvasLocation" x="62" y="3"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -14,6 +14,10 @@
 		E9606A0820FECB07004F7BE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9606A0620FECB07004F7BE2 /* LaunchScreen.storyboard */; };
 		E9606A1320FECB07004F7BE2 /* TestUIConstraintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9606A1220FECB07004F7BE2 /* TestUIConstraintTests.swift */; };
 		E9606A1E20FECB07004F7BE2 /* TestUIConstraintUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9606A1D20FECB07004F7BE2 /* TestUIConstraintUITests.swift */; };
+		E998F1FF20FED13100E8A804 /* MessageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E998F1FD20FED13100E8A804 /* MessageCollectionViewCell.swift */; };
+		E998F20020FED13100E8A804 /* MessageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E998F1FE20FED13100E8A804 /* MessageCollectionViewCell.xib */; };
+		E998F20320FF075C00E8A804 /* MessageCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E998F20220FF075C00E8A804 /* MessageCollectionViewLayout.swift */; };
+		E9F565E320FF305200E05CE3 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F565E220FF305200E05CE3 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		E9606A1920FECB07004F7BE2 /* TestUIConstraintUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestUIConstraintUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9606A1D20FECB07004F7BE2 /* TestUIConstraintUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUIConstraintUITests.swift; sourceTree = "<group>"; };
 		E9606A1F20FECB07004F7BE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E998F1FD20FED13100E8A804 /* MessageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCollectionViewCell.swift; sourceTree = "<group>"; };
+		E998F1FE20FED13100E8A804 /* MessageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCollectionViewCell.xib; sourceTree = "<group>"; };
+		E998F20220FF075C00E8A804 /* MessageCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCollectionViewLayout.swift; sourceTree = "<group>"; };
+		E9F565E220FF305200E05CE3 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +105,15 @@
 		E96069FC20FECB05004F7BE2 /* TestUIConstraint */ = {
 			isa = PBXGroup;
 			children = (
+				E998F20120FF073C00E8A804 /* Layout */,
 				E96069FD20FECB05004F7BE2 /* AppDelegate.swift */,
 				E96069FF20FECB05004F7BE2 /* ViewController.swift */,
 				E9606A0120FECB05004F7BE2 /* Main.storyboard */,
 				E9606A0420FECB07004F7BE2 /* Assets.xcassets */,
 				E9606A0620FECB07004F7BE2 /* LaunchScreen.storyboard */,
 				E9606A0920FECB07004F7BE2 /* Info.plist */,
+				E998F1FA20FED0E800E8A804 /* Cell */,
+				E9F565E220FF305200E05CE3 /* Message.swift */,
 			);
 			path = TestUIConstraint;
 			sourceTree = "<group>";
@@ -123,6 +134,23 @@
 				E9606A1F20FECB07004F7BE2 /* Info.plist */,
 			);
 			path = TestUIConstraintUITests;
+			sourceTree = "<group>";
+		};
+		E998F1FA20FED0E800E8A804 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E998F1FD20FED13100E8A804 /* MessageCollectionViewCell.swift */,
+				E998F1FE20FED13100E8A804 /* MessageCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E998F20120FF073C00E8A804 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				E998F20220FF075C00E8A804 /* MessageCollectionViewLayout.swift */,
+			);
+			path = Layout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +259,7 @@
 			files = (
 				E9606A0820FECB07004F7BE2 /* LaunchScreen.storyboard in Resources */,
 				E9606A0520FECB07004F7BE2 /* Assets.xcassets in Resources */,
+				E998F20020FED13100E8A804 /* MessageCollectionViewCell.xib in Resources */,
 				E9606A0320FECB05004F7BE2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +286,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9606A0020FECB05004F7BE2 /* ViewController.swift in Sources */,
+				E998F1FF20FED13100E8A804 /* MessageCollectionViewCell.swift in Sources */,
+				E9F565E320FF305200E05CE3 /* Message.swift in Sources */,
+				E998F20320FF075C00E8A804 /* MessageCollectionViewLayout.swift in Sources */,
 				E96069FE20FECB05004F7BE2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
