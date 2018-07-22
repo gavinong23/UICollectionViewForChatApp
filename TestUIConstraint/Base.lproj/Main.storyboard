@@ -21,7 +21,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eoo-c8-AWJ">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NpO-vV-a45">
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NpO-vV-a45">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="scrollIndicatorInsets" minX="5" minY="5" maxX="5" maxY="5"/>
@@ -29,7 +29,7 @@
                                         <cells/>
                                         <connections>
                                             <outlet property="dataSource" destination="BYZ-38-t0r" id="KLs-oi-tAm"/>
-                                            <outlet property="delegate" destination="BYZ-38-t0r" id="Zka-0U-SZW"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="P74-MV-spw"/>
                                         </connections>
                                     </collectionView>
                                 </subviews>
